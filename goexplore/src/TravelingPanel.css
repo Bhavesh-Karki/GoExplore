@@ -1,0 +1,124 @@
+.traveling-panel {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.panel-header {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #2d3748;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.panel-header p {
+  font-size: 18px;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.travelings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto 50px auto;
+  padding: 0 20px;
+}
+
+.panel-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-all-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+}
+
+.view-all-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+}
+
+.view-all-button:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .travelings-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .traveling-panel {
+    padding: 40px 15px;
+  }
+  
+  .panel-header {
+    margin-bottom: 40px;
+  }
+  
+  .panel-header h2 {
+    font-size: 32px;
+  }
+  
+  .panel-header p {
+    font-size: 16px;
+  }
+  
+  .travelings-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .view-all-button {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .traveling-panel {
+    padding: 30px 10px;
+  }
+  
+  .panel-header h2 {
+    font-size: 28px;
+  }
+  
+  .panel-header p {
+    font-size: 15px;
+  }
+  
+  .travelings-grid {
+    padding: 0 5px;
+  }
+}
